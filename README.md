@@ -1,16 +1,6 @@
 # advflutter_ch1
+## Theme
+<img src = "https://github.com/Shalu6634/advflutter_ch1/assets/149373622/d0966e01-af16-41f2-b717-51ea38093ee4" height = 25%  width = 25%>
+<img src = "https://github.com/Shalu6634/advflutter_ch1/assets/149373622/ac8fab74-d3b0-4a37-be8d-48cae5034b8b" height = 25%  width = 25%>
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
