@@ -1,6 +1,8 @@
 import 'package:advflutter_ch1/screen/1.4/View/themeView.dart';
 import 'package:advflutter_ch1/screen/1.4/provider/themeprovider.dart';
 import 'package:advflutter_ch1/screen/1.5/view/introScreen1.dart';
+import 'package:advflutter_ch1/screen/1.5/view/introScreen2.dart';
+import 'package:advflutter_ch1/screen/1.5/view/introScreen3.dart';
 import 'package:advflutter_ch1/screen/home/change_theme.dart';
 import 'package:advflutter_ch1/screen/lec-1/Stepper/stepper1.dart';
 import 'package:advflutter_ch1/screen/lec-1/Stepper/stepper2.dart';
@@ -27,6 +29,8 @@ void main() {
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (context) => IntroScreen1(),
+          '/intro2': (context) => IntroScreen2(),
+          '/intro3': (context) => IntroScreen3(),
           '/change': (context) => ChangeProviderTheme(),
           '/stepper1': (context) => StepperScreen(),
           '/stepper': (context) => Stepper2(),
