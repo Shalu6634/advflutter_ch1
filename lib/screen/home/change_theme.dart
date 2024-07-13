@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../utils/globalVar.dart';
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class ChangeTheme extends StatefulWidget {
+  const ChangeTheme({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<ChangeTheme> createState() => _ChangeThemeState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _ChangeThemeState extends State<ChangeTheme> {
   @override
   Widget build(BuildContext context) {
     double height= MediaQuery.of(context).size.height;
