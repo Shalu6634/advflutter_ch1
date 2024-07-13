@@ -36,7 +36,6 @@ class ChangeProviderTheme extends StatelessWidget {
           Center(
             child: CircleAvatar(
               radius: 60,
-
               backgroundImage: AssetImage('assets/img/girl.jpg',),
             ),
           ),
@@ -59,6 +58,7 @@ class ChangeProviderTheme extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             trailing: Switch(
+              splashRadius: 10,
             onChanged: (value) {
             changeThemeFalse.changeTheme();
               },
@@ -101,7 +101,7 @@ class ChangeProviderTheme extends StatelessWidget {
               color: changeThemeTrue.isDark ? Colors.yellowAccent : Colors.purple,
             ),
             title: Text(
-              'Help Center',
+              'Notification',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
