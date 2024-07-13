@@ -107,6 +107,10 @@ void main() {
 ## Provider Tree
 <img src = "https://github.com/user-attachments/assets/0d5ec086-75a6-4eef-a65b-04704ac3acc6" height = 35%  width = 40%>
 
+ ## Provider & Change Theme using Provider
+ <img src = "https://github.com/user-attachments/assets/bb41fff8-a4fe-4316-87c0-4d1c5f790d3b" height = 25%  width = 25%>
+ <img src = "https://github.com/user-attachments/assets/96e36732-587d-43d0-81b7-7487660a431b" height = 25%  width = 25%>
 
+https://github.com/user-attachments/assets/6de8eeab-a75c-4800-9715-8725c9492ec6
 
 
