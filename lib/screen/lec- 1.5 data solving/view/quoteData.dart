@@ -1,10 +1,11 @@
-import 'package:advflutter_ch1/screen/lec-%201.5/modal/modal.dart';
-import 'package:advflutter_ch1/screen/lec-%201.5/provider/provider.dart';
+
 import 'package:advflutter_ch1/utils/globalList.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../utils/globalVar.dart';
+import '../modal/modal.dart';
+import '../provider/provider.dart';
 
 class QuoteScreen extends StatelessWidget {
   const QuoteScreen({super.key});

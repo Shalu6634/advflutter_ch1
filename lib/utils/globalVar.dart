@@ -1,5 +1,7 @@
-import 'package:advflutter_ch1/screen/lec-%201.5/modal/modal.dart';
+
 import 'package:flutter/cupertino.dart';
+
+import '../screen/lec- 1.5 data solving/modal/modal.dart';
 
 bool isDark = false;
 int number = 0;
