@@ -29,8 +29,8 @@ void main() {
             : ThemeMode.light,
         debugShowCheckedModeBanner: false,
         routes: {
-          '/': (context) => QuotesAdd(),
-          '/intro': (context) => IntroScreen1(),
+          // '/': (context) => QuotesAdd(),
+          '/': (context) => IntroScreen1(),
           '/intro2': (context) => IntroScreen2(),
           '/intro3': (context) => IntroScreen3(),
           '/change': (context) => ChangeProviderTheme(),
