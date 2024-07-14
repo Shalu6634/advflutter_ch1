@@ -4,33 +4,34 @@ import 'package:advflutter_ch1/screen/1.5/view/introScreen1.dart';
 import 'package:advflutter_ch1/screen/1.5/view/introScreen2.dart';
 import 'package:advflutter_ch1/screen/1.5/view/introScreen3.dart';
 import 'package:advflutter_ch1/screen/home/change_theme.dart';
-import 'package:advflutter_ch1/screen/lec-%201.5/view.dart';
+import 'package:advflutter_ch1/screen/lec-%201.5/provider/provider.dart';
+import 'package:advflutter_ch1/screen/lec-%201.5/view/quoteData.dart';
 import 'package:advflutter_ch1/screen/lec-1/Stepper/stepper1.dart';
 import 'package:advflutter_ch1/screen/lec-1/Stepper/stepper2.dart';
-import 'package:advflutter_ch1/utils/globalVar.dart';
+// import 'package:advflutter_ch1/utils/globalVar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (context) => ChangeProvider(),
+      create: (context) => QuoteProvider(),
       builder: (context, child) => MaterialApp(
-        theme: ThemeData(
-          // brightness: Brightness.light,
-          colorScheme: ColorScheme.light(
-          ),
-        ),
-        darkTheme: ThemeData(
-          brightness: Brightness.dark,
-        ),
-        themeMode: Provider.of<ChangeProvider>(context).isDark
-            ? ThemeMode.dark
-            : ThemeMode.light,
+        // theme: ThemeData(
+        //   // brightness: Brightness.light,
+        //   colorScheme: ColorScheme.light(
+        //   ),
+        // ),
+        // darkTheme: ThemeData(
+        //   brightness: Brightness.dark,
+        // ),
+        // themeMode: Provider.of<ChangeProvider>(context).isDark
+        //     ? ThemeMode.dark
+        //     : ThemeMode.light,
         debugShowCheckedModeBanner: false,
         routes: {
-          // '/': (context) => QuotesAdd(),
-          '/': (context) => IntroScreen1(),
+          '/': (context) => QuoteScreen(),
+          '/intro': (context) => IntroScreen1(),
           '/intro2': (context) => IntroScreen2(),
           '/intro3': (context) => IntroScreen3(),
           '/change': (context) => ChangeProviderTheme(),
