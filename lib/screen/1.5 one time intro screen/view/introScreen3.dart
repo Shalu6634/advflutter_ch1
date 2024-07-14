@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../1.4/View/themeView.dart';
+
 class IntroScreen3 extends StatelessWidget {
   const IntroScreen3({super.key});
 
@@ -57,7 +59,11 @@ class IntroScreen3 extends StatelessWidget {
 
                         GestureDetector(
                           onTap: () {
-                            Navigator.of(context).pushNamed('/intro2');
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => ChangeProviderTheme(),
+                              ),
+                            );
                           },
                           child:
                             Container(
