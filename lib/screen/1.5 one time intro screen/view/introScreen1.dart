@@ -12,7 +12,8 @@ class IntroScreen1 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Stack(alignment: Alignment.bottomCenter, children: [
+          Stack(
+          children: [
             Container(
               height: height *1,
               width: width * 1,
@@ -27,63 +28,107 @@ class IntroScreen1 extends StatelessWidget {
               ),
             ),
             Center(
-              child: Container(
-                alignment: Alignment.center,
-                height: height * 0.4,
-                width: width * 1,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:
-                        BorderRadius.only(topLeft: Radius.circular(110))),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child:
+              Stack(
                   children: [
-                    Text(
-                      'Hmmm , Healthy food',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
-                    ),
-                    Center(
-                      child: Text(
-                        textAlign: TextAlign.center,
-                          'Food is the substance we eat\n every day for energy and strength. \n  There are many different types of food, \nsuch as fruits, vegetables, rice, and pasta.',style: TextStyle(color: Colors.grey),),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Skip Now',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
-                        GestureDetector(onTap: (){
-                          Navigator.of(context).pushNamed('/intro2');
-                        },
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children:[
-                              Container(
-                                height: 60,
-                                width: 80,
-                                decoration: BoxDecoration(
-                                    color: Colors.yellow,
-                                    shape: BoxShape.circle
-                                ),
-                              ),
-                              Container(
-                                height: 30,
-                                width: 30,
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    shape: BoxShape.circle
-                                ),
-                                child: Icon(Icons.arrow_forward_outlined,size: 20,color:  Colors.yellow,),
-                              ),
-                          
-                            ]
+                    Container(
+                      height: height *1,
+                      width: width * 1,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            'assets/intro/intro1.jpg',
                           ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
+                        ),
+                      ),
+                    ),
+
+                    Center(
+                      child:
+                     Column(
+
+                       children: [
+                         Container(
+                           height: height *0.6,
+                           width: width * 1,
+                           decoration: BoxDecoration(
+                             image: DecorationImage(
+                               fit: BoxFit.cover,
+                               image: AssetImage(
+                                 'assets/intro/g1.png',
+                               ),
+                             ),
+                           ),
+                         ),
+
+                         Container(
+                           alignment: Alignment.center,
+                           height: height * 0.4,
+                           width: width * 1,
+                           decoration: BoxDecoration(
+                               color: Colors.white,
+                               borderRadius:
+                               BorderRadius.only(topLeft: Radius.circular(110))),
+
+                           child: Column(
+                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                             children: [
+                               Text(
+                                 'Hmmm , Tasty food',
+                                 style:
+                                 TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
+                               ),
+                               Center(
+                                 child: Text(
+                                   textAlign: TextAlign.center,
+                                   'Food is the substance we eat\n every day for energy and strength. \n  There are many different types of food, \nsuch as fruits, vegetables, rice, and pasta.',style: TextStyle(color: Colors.grey),),
+                               ),
+                               Row(
+                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                 children: [
+                                   Text('Skip Now',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                   GestureDetector(onTap: (){
+                                     Navigator.of(context).pushNamed('/intro2');
+                                   },
+                                     child: Stack(
+                                         alignment: Alignment.center,
+                                         children:[
+                                           Container(
+                                             height: 60,
+                                             width: 80,
+                                             decoration: BoxDecoration(
+                                                 color: Colors.yellow,
+                                                 shape: BoxShape.circle
+                                             ),
+                                           ),
+                                           Container(
+                                             height: 30,
+                                             width: 30,
+                                             decoration: BoxDecoration(
+                                                 color: Colors.white,
+                                                 shape: BoxShape.circle
+                                             ),
+                                             child: Icon(Icons.arrow_forward_outlined,size: 20,color:  Colors.yellow,),
+                                           ),
+
+                                         ]
+                                     ),
+                                   )
+                                 ],
+                               )
+                             ],
+                           ),
+                         ),
+                       ],
+                     )
+
+
+                    ),
+
+
+                  ]),
+
             ),
           ]),
         ],
