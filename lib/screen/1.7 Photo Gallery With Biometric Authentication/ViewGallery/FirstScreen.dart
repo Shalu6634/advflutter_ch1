@@ -1,6 +1,9 @@
 import 'package:advflutter_ch1/utils/GalleryList.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
+
+import '../../../utils/globalVar.dart';
+
 class AuthenticationScreen extends StatefulWidget {
   const AuthenticationScreen({super.key});
 
@@ -8,9 +11,7 @@ class AuthenticationScreen extends StatefulWidget {
   State<AuthenticationScreen> createState() => _AuthenticationScreenState();
 }
 
-
 class _AuthenticationScreenState extends State<AuthenticationScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +27,9 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             Row(
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -47,11 +50,37 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                 SizedBox(
                   width: 20,
                 ),
-                GestureDetector(onTap: (){
+                GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        PopupMenuButton<SampleItem>(
+                          initialValue: selectedItem,
+                          onSelected: (SampleItem item){
+                            setState(() {
+                              selectedItem = item;
+                            });
+                          },
+                          itemBuilder: (context) => <PopupMenuEntry<SampleItem>>[
+                            PopupMenuItem<SampleItem>(
+                             child: Text('hide'),
+                              value: SampleItem.hideFile,
+                            ),
+                            PopupMenuItem<SampleItem>(
+                              child: Text('file'),
+                              value: SampleItem.hideFolder,
+                            ),
+                            PopupMenuItem<SampleItem>(
+                              child: Text('file'),
+                              value: SampleItem.hideEyes,
+                            ),
+                          ]
+                        );
+                      });
+                      // Navigator.of(context).pushNamed('/second');
+                    },
+                    child: Icon(Icons.more_vert_rounded),
+                ),
 
-                  
-                  Navigator.of(context).pushNamed('/second');
-                },child: Icon(Icons.more_vert_rounded)),
               ],
             ),
             Wrap(
@@ -72,15 +101,16 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                                 image: AssetImage(contentList[index]['img']),
                               ),
                               borderRadius: BorderRadius.circular(15)),
-        
                         ),
                         Text(contentList[index]['name']),
-                        Text(contentList[index]['count'].toString(),style: TextStyle(color: Colors.grey),),
+                        Text(
+                          contentList[index]['count'].toString(),
+                          style: TextStyle(color: Colors.grey),
+                        ),
                       ],
                     ),
                   ),
                 ),
-        
               ],
             ),
           ],
