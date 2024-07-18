@@ -1,17 +1,14 @@
+import 'package:advflutter_ch1/screen/1.7%20Photo%20Gallery%20With%20Biometric%20Authentication/ViewGallery/SecondScreen.dart';
 import 'package:advflutter_ch1/utils/GalleryList.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
-
+import 'package:provider/provider.dart';
 import '../../../utils/globalVar.dart';
+import '../provider/localAuth_provider.dart';
 
-class AuthenticationScreen extends StatefulWidget {
+class AuthenticationScreen extends StatelessWidget {
   const AuthenticationScreen({super.key});
 
-  @override
-  State<AuthenticationScreen> createState() => _AuthenticationScreenState();
-}
-
-class _AuthenticationScreenState extends State<AuthenticationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,49 +45,50 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                 ),
                 Icon(Icons.search),
                 SizedBox(
-                  width: 20,
+                  width: 10,
                 ),
-                GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        PopupMenuButton<SampleItem>(
-                          initialValue: selectedItem,
-                          onSelected: (SampleItem item){
-                            setState(() {
-                              selectedItem = item;
-                            });
-                          },
-                          itemBuilder: (context) => <PopupMenuEntry<SampleItem>>[
-                            PopupMenuItem<SampleItem>(
-                             child: Text('hide'),
-                              value: SampleItem.hideFile,
-                            ),
-                            PopupMenuItem<SampleItem>(
-                              child: Text('file'),
-                              value: SampleItem.hideFolder,
-                            ),
-                            PopupMenuItem<SampleItem>(
-                              child: Text('file'),
-                              value: SampleItem.hideEyes,
-                            ),
-                          ]
+                PopupMenuButton<String>(
+                  onSelected: (String value) async {
+                    if (value == 'Hide Folder') {
+                      if (await Provider.of<AuthProvider>(context,
+                          listen: false)
+                          .checkFingerprint()) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SecondPage(),
+                          ),
                         );
-                      });
-                      // Navigator.of(context).pushNamed('/second');
-                    },
-                    child: Icon(Icons.more_vert_rounded),
-                ),
-
+                      }
+                    }
+                  },
+                  itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+                    const PopupMenuItem<String>(
+                      value: 'Edit',
+                      child: Text('Edit'),
+                    ),
+                    const PopupMenuItem<String>(
+                      value: 'Setting',
+                      child: Text('Setting'),
+                    ),
+                    const PopupMenuItem<String>(
+                      value: 'Hide Folder',
+                      child: Text('Hide Folder'),
+                    ),
+                  ],
+                  child: const Icon(Icons.more_vert),
+                )
               ],
             ),
+
             Wrap(
               children: [
                 ...List.generate(
                   contentList.length,
                   (index) => Padding(
                     padding: const EdgeInsets.all(8.4),
-                    child: Column(
-                      children: [
+                    child: Column( 
+                      children:[
                         Container(
                           height: 104,
                           width: 103,

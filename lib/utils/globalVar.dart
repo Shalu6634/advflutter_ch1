@@ -11,5 +11,3 @@ var txtQuote = TextEditingController();
 QuotesModal quotesModal = QuotesModal();
 
 GlobalKey<FormState> formKey = GlobalKey();
-enum SampleItem { hideFile, hideFolder, hideEyes }
-SampleItem? selectedItem;
