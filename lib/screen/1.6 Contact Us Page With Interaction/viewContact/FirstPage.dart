@@ -54,7 +54,7 @@ class Homepage extends StatelessWidget {
             width: width * 0.7,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
-                border: Border.all(width: 0.098, color: Colors.grey)),
+                border: Border.all(width: 0.078, color: Colors.grey)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

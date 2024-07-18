@@ -39,6 +39,8 @@ dependencies:
   shared_preferences: ^2.2.3
   url_launcher: ^6.3.0
   share_plus: ^9.0.0
+  local_auth: ^2.2.0
+
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +69,7 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
+    - assets/img/gallery/
     - assets/img/girl.jpg
 
     - assets/intro/intro1.jpg
