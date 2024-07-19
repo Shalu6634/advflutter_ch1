@@ -173,6 +173,7 @@ class Quote {
 
 <img src = "https://github.com/user-attachments/assets/0bec5594-079b-407f-a80f-82fe88812e86" height = 25%  width = 25%>
 <img src = "https://github.com/user-attachments/assets/e952c80e-95f4-431d-9db9-a9000f64a196" height = 25%  width = 25%>
+<img src = "https://github.com/user-attachments/assets/c480b531-b517-4fa0-995c-fe30937c162a" height = 25%  width=25%>
 
 
 https://github.com/user-attachments/assets/9ad14035-0d8d-44d7-b8ac-a683b46c1efc
