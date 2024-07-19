@@ -185,6 +185,13 @@ https://github.com/user-attachments/assets/9ad14035-0d8d-44d7-b8ac-a683b46c1efc
 
 https://github.com/user-attachments/assets/d84e53f2-2f5b-43f6-8c82-e4a6b2c11101
 
+##  Photo Gallery With Biometric Authentication
+- Biometric authentication is becoming increasingly prevalent due to advancements in technology and the growing need for secure and user-friendly authentication methods.
+- Integrate biometric authentication SDKs/APIs (e.g., Apple's Face ID, Android's BiometricPrompt).
+- Ensure fallback options are available.
+- LocalAuthentication is used to check if the device supports biometric authentication and to perform the actual authentication.
+- The _checkBiometrics method checks if biometric authentication is available on the device.
+- The _authenticate method prompts the user to authenticate using biometrics.
 
 <img src="https://github.com/user-attachments/assets/13d29fd6-3b64-4fa1-b0ed-6b3be689a2f4" height = 25%  width=25%>
 <img src="https://github.com/user-attachments/assets/735ce443-43e0-476a-a93f-7aab19109d44" height = 25%  width=25%>
