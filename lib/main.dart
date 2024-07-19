@@ -1,4 +1,6 @@
+import 'package:advflutter_ch1/screen/1.4/View/Counter_app.dart';
 import 'package:advflutter_ch1/screen/1.4/View/themeView.dart';
+import 'package:advflutter_ch1/screen/1.4/provider/counter_provider.dart';
 import 'package:advflutter_ch1/screen/1.6%20Contact%20Us%20Page%20With%20Interaction/viewContact/FirstPage.dart';
 import 'package:advflutter_ch1/screen/1.7%20Photo%20Gallery%20With%20Biometric%20Authentication/ViewGallery/FirstScreen.dart';
 import 'package:advflutter_ch1/screen/1.7%20Photo%20Gallery%20With%20Biometric%20Authentication/ViewGallery/SecondScreen.dart';
@@ -14,9 +16,11 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (context) => AuthProvider(),
+      create: (context) => CounterProvider(),
       builder: (context, child) =>
+
       MaterialApp(
+
     //     theme: ThemeData(// brightness: Brightness.light,
     //       colorScheme: ColorScheme.light(
     //       ),
@@ -38,8 +42,9 @@ void main() {
           '/stepper1': (context) => StepperScreen(),
           '/stepper': (context) => Stepper2(),
           '/theme': (context) => ChangeTheme(),
-          '/': (context) => AuthenticationScreen(),
+          '/auth': (context) => AuthenticationScreen(),
           '/second': (context) => SecondPage(),
+          '/': (context) => CounterApp(),
         },
       // ),
     ),
