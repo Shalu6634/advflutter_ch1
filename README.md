@@ -187,6 +187,15 @@ https://github.com/user-attachments/assets/9ad14035-0d8d-44d7-b8ac-a683b46c1efc
 https://github.com/user-attachments/assets/d84e53f2-2f5b-43f6-8c82-e4a6b2c11101
 
 ## One Time IntroScreen
+
+# SharedPreferences 
+
+- SharedPreferences in Android is a mechanism for saving key-value pairs persistently. It allows you to store and retrieve primitive data types (boolean, float, int, long, String) in a persistent manner across app sessions.
+
+- SharedPreferences is suitable for storing small amounts of data, such as user preferences, settings, or application state.
+
+- SharedPreferences is a simple and effective way to manage app preferences and small amounts of persistent data in Android applications.
+
 <img src = "https://github.com/user-attachments/assets/b3c87ad2-9fff-4c56-8011-eaebbf7687ba" height=20%  width=20%>
 <img src = "https://github.com/user-attachments/assets/d56cdca5-2bb5-40a0-8730-bbbe32cf1dc4" height=20%  width=20%>
 <img src = "https://github.com/user-attachments/assets/94ad56a2-e25d-47b7-9f67-68a403cd2c7b" height=20%  width=20%>
