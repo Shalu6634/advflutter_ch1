@@ -186,6 +186,24 @@ https://github.com/user-attachments/assets/9ad14035-0d8d-44d7-b8ac-a683b46c1efc
 
 https://github.com/user-attachments/assets/d84e53f2-2f5b-43f6-8c82-e4a6b2c11101
 
+## One Time IntroScreen
+
+# SharedPreferences 
+
+- SharedPreferences in Android is a mechanism for saving key-value pairs persistently. It allows you to store and retrieve primitive data types (boolean, float, int, long, String) in a persistent manner across app sessions.
+
+- SharedPreferences is suitable for storing small amounts of data, such as user preferences, settings, or application state.
+
+- SharedPreferences is a simple and effective way to manage app preferences and small amounts of persistent data in Android applications.
+
+<img src = "https://github.com/user-attachments/assets/b3c87ad2-9fff-4c56-8011-eaebbf7687ba" height=20%  width=20%>
+<img src = "https://github.com/user-attachments/assets/d56cdca5-2bb5-40a0-8730-bbbe32cf1dc4" height=20%  width=20%>
+<img src = "https://github.com/user-attachments/assets/94ad56a2-e25d-47b7-9f67-68a403cd2c7b" height=20%  width=20%>
+<img src = "https://github.com/user-attachments/assets/bb41fff8-a4fe-4316-87c0-4d1c5f790d3b" height = 20%  width = 20%>
+
+
+
+
 ##  Photo Gallery With Biometric Authentication
 - Biometric authentication is becoming increasingly prevalent due to advancements in technology and the growing need for secure and user-friendly authentication methods.
 - Integrate biometric authentication SDKs/APIs (e.g., Apple's Face ID, Android's BiometricPrompt).
