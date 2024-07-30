@@ -201,8 +201,7 @@ https://github.com/user-attachments/assets/d84e53f2-2f5b-43f6-8c82-e4a6b2c11101
 <img src = "https://github.com/user-attachments/assets/94ad56a2-e25d-47b7-9f67-68a403cd2c7b" height=20%  width=20%>
 <img src = "https://github.com/user-attachments/assets/bb41fff8-a4fe-4316-87c0-4d1c5f790d3b" height = 20%  width = 20%>
 
-
-
+https://github.com/user-attachments/assets/47963d5e-9526-436c-b3ad-0fcb5fd66fc7
 
 ##  Photo Gallery With Biometric Authentication
 - Biometric authentication is becoming increasingly prevalent due to advancements in technology and the growing need for secure and user-friendly authentication methods.
